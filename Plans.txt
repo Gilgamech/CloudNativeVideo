@@ -1,0 +1,110 @@
+Author: Stephen Gillie
+Created: 7/22/2022
+Updated: 7/25/2022
+Notes: Make a short video showing an image similar to the Gartner chart, extended into 3d. 
+- Make 3d comparative levels of architecture solutions - tech level, tech flavor, tech maturity (Gartner bracket) 
+
+- Where to incorporate shift left? 
+
+Time: 
+Audio: 
+The goal is to stop patching. 
+Video: 
+
+Time: 
+Audio: 
+Patching is good, right? Isn't it good to update servers, remove vulnerabilities, and ensure a secure computing environment for everyone?
+Video: 
+
+Time: 
+Audio: 
+Patching benefits nobody, really. It's time lost by your employees, by your company, and by your industry. It's an unnecessary cost for most software, where service-based delivery is available.
+Video: 
+
+Time: 
+Audio: 
+Video: 
+
+- Getting companies to stop operating like it's 2006 or 2014 and act like it's 2022. (messaging)
+- 1990s model: LAMP stacks running on standard OSes on bare metal in a physical data center.
+- 2001 VMWare ESX released (They got the letters mixed up, just like Toyota does with the XSE trim level.)
+- 2001 model: LAMP stacks running on virtualized OSes on VMWare on bare metal in a physical data center.
+- 2006 AWS EC2 released
+- 2006 model: LAMP stacks running on virtualized OSes on an EC2 server.
+- 2014 Containers & Kubernetes released
+- 2014 model: containers on a managed EC2 server.
+- 2018 AWS Lambda matures (AWS product offerings explode)
+- 2018 model: Lambda functions behind API Gateways. (Suite of products arrayed to support eCommerce and Big Data backing the site.)
+- 2019 AWS Control Tower released.
+- 2019 model: Numerous AWS accounts nested under a main account.
+
+
+# Levels of Windows Patching
+- Manual patching (5 min per server is 12 servers per hour)
+- Managed Patching / Managed OS - pay someone else to do it
+- SCCM - package & deliver updates, have Group Policy install it, and verify with a tool like Qualys.
+- Cattle not pets - build new servers from a patched image all the time.
+- Containers - Abstract away the underlying OS.
+- Serverless - use services where you don't interact with the underlying OS.
+
+- Replacing with SaaS allows coupling costs to usage much more effectively than hiring contractors to mange your IaaS.
+- To move from the multi-network hydra of VPC foam:
+	1. Main
+	2. Audit
+	3. Logging
+	4. Security Dev
+	5. Security Prod
+	6. Corp Dev
+	7. Corp Test
+	8. Corp Prod
+	9. AppA Dev
+	10. AppA Test 
+	11. AppA Stage
+	12. AppA QA
+	13. AppA Prod
+	14. AppB Dev
+	15. AppB Test 
+	16. AppB Stage
+	17. AppB QA
+	18. AppB Prod
+	19. DevOps Dev
+	20. DevOps Test
+	21. DevOps Prod
+
+Remodel your workflow of Dev -> (Test -> Stage -> QA ->) Prod (a few stacks are optional in some applications)
+to a workflow more like Dev locally -> Commit -> CI/CD pipeline [automated unit Testing -> automated Build -> automated stack Validation -> automated Deploy] -> automated blue/green rebalancing (until only the new version is running).
+
+Which reduces you down to:
+	1. Main
+	2. Audit
+	3. Logging
+	4. Security Prod
+	5. Security is using entirely SaaS products.
+		1. Security Dev - new sandbox accounts as needed
+	- Corp is using entirely SaaS products.
+		2. Corp Dev 
+		3. Corp Test
+		4. Corp Prod
+	- CI/CD pipeline handles these steps. (i.e. Gitlab)
+		5. App Dev - develop locally
+		- App Repo - group code storage
+		6. App Test - automated testing
+		7. App QA - more automated testing
+		8. App Stage - repo then blue/green deploy
+	6. App Prod
+		9. App Dev - as above
+		- App Repo - as above
+		10. App Test - as above
+		11. App Stage - as above
+		12. App QA - as above
+	7. App Prod
+	- CI/CD pipeline is entirely SaaS products.
+		13. DevOps Dev
+		14. DevOps Test
+		15. DevOps Prod
+
+- SaaS cost differential
+This is part of where companies see massive savings from going to "the cloud" - in not having to patch (or rotate) fleets or herds of servers. Lift-and-shift is like a technical loan for your technical debt, and can help you keep expanding when you're in a tight spot, but it's the least efficient way to become cloud-based.
+- Set up sample companies based on real data. Uber as a CloudFormation template
+
+
