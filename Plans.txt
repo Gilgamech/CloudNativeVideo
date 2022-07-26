@@ -4,6 +4,25 @@ Updated: 7/25/2022
 Notes: Make a short video showing an image similar to the Gartner chart, extended into 3d. 
 - Make 3d comparative graph of architecture solutions - tech level, tech flavor, tech maturity (Gartner bracket) 
 
+Trends https://www.youtube.com/watch?v=LOpFYMPXqE4
+- Metaverse - build integrations for nontech
+- AI - Github copilot. Data science. Create an AI-driven psychic hotline where GPT-3 pretends to be the loved one.
+- DB - Relational is popular again. AI in DB like MinesDB, planetscale and supabase make relational easier to work with. Mongo gains serverless and full text search. Redis gains graph, time-series, and full text search. Build a job board specialized for a hot market segment, and get email subscribers.
+- JS - Frameworks (React, Angular, Vue) solidify, metaframeworks rise. NextJS and Vercel. React Server Components brings Hydrogen from Spotify. Vercel hires Rich Harris to work on Svelte full time.
+	- meta-metaframeworks: WoodsJS built on Next, to build db apps. Astro lets you use multiple frameworks without sending any JS to the client(?).
+	- Build tools improved - Vite is much simpler and faster than Webpack. Build a themeforest clone to create custom server-rendered templtaes for e-learning, small business, real estate, etc. 
+	- Next already has a template, but you can vary on this. 
+	- Since Next is server-based, you can add Stripe or Sendgrid.
+- Jetbrains has new IDE
+- VSCode.dev has vscode in the browser.
+- TailwindCSS gained JIT
+- Typescript gains popularity
+- JS adds array.at to get the last item or a negative index, standardized top-level await, and better way to check has own property.
+- GraphQL won't replace REST and the hype has died off.
+- WebAssembly isn't replacing JS, but has like Stackblitz which brings server capabilities to the browser. 
+- Mobile: Flutter and React Native
+
+
 A great strategy to prevent ransomware attacks is to become cloud-native. Can't hack what isn't there. Reach out to me to learn more about reducing your attack surface while reducing costs and increasing flexibility.
 
 Cloud-native strategies are one way to couple tech profits and expenses more tightly. Reach out to me to find out how to reduce costs while increasing service speed.
