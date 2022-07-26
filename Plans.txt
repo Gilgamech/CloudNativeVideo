@@ -2,9 +2,12 @@ Author: Stephen Gillie
 Created: 7/22/2022
 Updated: 7/25/2022
 Notes: Make a short video showing an image similar to the Gartner chart, extended into 3d. 
-- Make 3d comparative levels of architecture solutions - tech level, tech flavor, tech maturity (Gartner bracket) 
+- Make 3d comparative graph of architecture solutions - tech level, tech flavor, tech maturity (Gartner bracket) 
 
-- Where to incorporate shift left? 
+A great strategy to prevent ransomware attacks is to become cloud-native. Can't hack what isn't there. Reach out to me to learn more about reducing your attack surface while reducing costs and increasing flexibility.
+
+Cloud-native strategies are one way to couple tech profits and expenses more tightly. Reach out to me to find out how to reduce costs while increasing service speed.
+
 
 Time: 
 Audio: 
@@ -13,7 +16,7 @@ Video:
 
 Time: 
 Audio: 
-Patching is good, right? Isn't it good to update servers, remove vulnerabilities, and ensure a secure computing environment for everyone?
+Patching is good, right? Isn't it good to install updates, remove vulnerabilities, and ensure a secure computing environment for everyone? You're not "one of those people" with hundreds of updates pending, are you? 
 Video: 
 
 Time: 
@@ -106,5 +109,7 @@ Which reduces you down to:
 - SaaS cost differential
 This is part of where companies see massive savings from going to "the cloud" - in not having to patch (or rotate) fleets or herds of servers. Lift-and-shift is like a technical loan for your technical debt, and can help you keep expanding when you're in a tight spot, but it's the least efficient way to become cloud-based.
 - Set up sample companies based on real data. Uber as a CloudFormation template
+
+- Where to incorporate shift left? 
 
 
